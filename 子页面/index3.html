@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>交个朋友吧</title>
+        <link rel="stylesheet" href="../CSS/index.css">
+    </head>
+    <body>
+        <!--页眉区header-->
+        <header></header>
+        <!-- end of header -->
+        <!-- 导航区nav -->
+        <nav>
+            <ul class="inner">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="index1.html">秘密花园</a></li>
+                <li><a href="index2.html">介绍一下自己</a></li>
+                <li><a href="index3.html">交个朋友吧</a></li>
+            </ul>
+        </nav>
+        <!-- end of nav -->
+        <img src="../img/交个朋友吧.jpg" id="meme">
+        <!-- 公共类inner,用来放置内容，内容区宽度固定，居中 -->
+        <div class="inner">
+            <h2>嘿！如果你也想找一个小伙伴或是对这个网页有很棒的建议，麻烦你填一下下面的表单哦！</h2>
+            <!-- 表单form -->
+            <form>
+                <div class="tableRow">
+                    <p>昵称：</p>
+                    <p><input type="text" name="昵称"></p>
+                </div>
+                <div class="tableRow">
+                    <p>年龄：</p>
+                    <p>
+                        <select name="年龄">
+                            <option value="00后">00后</option>
+                            <option value="90后">90后</option>
+                            <option value="80后">80后</option>
+                            <option value="其他">其他</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p>性别：</p>
+                    <p>
+                        <select name="性别">
+                            <option value="女">女</option>
+                            <option value="男">男</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p>民族：</p>
+                    <p><input type="text" name="民族"></p>
+                </div>
+                <div class="tableRow">
+                    <p>所在地区：</p>
+                    <p><input type="text" name="所在地区"></p>
+                </div>
+                <div class="tableRow">
+                    <p>邮箱：</p>
+                    <p><input type="email" name="邮箱"></p>
+                </div>
+                <div class="tableRow">
+                    <p>在此之前，你了解肖战吗？</p>
+                    <p class="bigger">
+                        <input type="radio" name="了解程度" value="不了解">不了解<br>
+                        <input type="radio" name="了解程度" value="听说过">听说过<br>
+                        <input type="radio" name="了解程度" value="当然">当然！我也是“小飞侠”
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p>你比较喜欢网页的哪些部分？</p>
+                    <p class="bigger">
+                        <input type="checkbox" name="喜欢部分" value="“多面肖战”">“多面肖战”<br>
+                        <input type="checkbox" name="喜欢部分" value="XiaoZhan's music">XiaoZhan's music<br>
+                        <input type="checkbox" name="喜欢部分" value="访谈--听他说">访谈--听他说<br>
+                        <input type="checkbox" name="喜欢部分" value="舞台上闪闪发光的他">舞台上闪闪发光的他<br>
+                        <input type="checkbox" name="喜欢部分" value="他的话">他的话<br>
+                        <input type="checkbox" name="喜欢部分" value="他眼中的世界">他眼中的世界<br>
+                        <input type="checkbox" name="喜欢部分" value="他笔下的作品">他笔下的作品
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p>简单介绍一下自己叭!</p>
+                    <p><textarea name="介绍"></textarea></p>
+                </div>
+                <div class="tableRow">
+                    <p>关于网页的内容和表现形式，你有什么好的建议？<br>畅所欲言吧！</p>
+                    <p><textarea name="建议"></textarea></p>
+                </div>
+                <div class="tableRow" id="submit">
+                    <p></p>
+                    <p><input type="submit" value="提交" class="submit"></p>
+                </div>
+            </form>
+            <!-- end of form -->
+        </div>
+        <!-- 页脚区footer -->
+        <footer>
+            <img src="../img/战.png" alt="logo" id="logo">
+        </footer>
+        <!-- end of footer -->
+    </body>
+</html>

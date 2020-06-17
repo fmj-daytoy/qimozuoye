@@ -1,0 +1,475 @@
+/* 去掉浏览器默认样式 */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 去掉a标签的下划线并设置颜色 */
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* 删除列表项的项目符号 */
+
+ul{ 
+     list-style-type: none; 
+} 
+
+
+/* 定义公共类inner，用来放置内容区，内容区宽度固定且居中。凝胶布局的关键代码 */
+
+.inner{
+    width:1100px;
+    margin: 0 auto;
+}
+
+
+/* 设置网页字体颜色、字体样式与背景颜色 */
+
+body{
+    color: #000;
+    font-family: '微软雅黑', 'Nanum Gothic', 'simsun';
+    background-color: #f0f2f4;
+}
+
+
+/* 第1个页面--首页 * /
+/* 页眉区header */
+
+header{
+    /* 插入一个星空背景 */
+    background: url(../img/星空背景.jpg);
+    /* 设置高度属性来显示背景图像 */    
+    height: 247px;
+}
+
+
+/* 导航区nav */
+
+nav{
+    background-color: #0c111b;
+}
+
+
+nav ul li{
+    /* 取消列表项前后的回车，同时可以设置其高度 */
+    display: inline-block;
+    /* 设置列表项即导航的高度 */
+    line-height: 60px;
+}
+
+
+nav ul li a{
+    /* 为了使a的hover背景有效果，将a设置为块级元素显示 */
+    display: block;
+    color:white;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 20px;
+    font-weight: lighter;
+    /* 为了美观，导航项（列表项）li内左右留了一定的间隙 */
+    padding: 0 30px;
+}
+
+
+nav ul li a:hover{
+   background-color: grey;
+}
+
+
+/* 第1个页面（首页）的1号内容区cont-1-1 */
+
+#cont-1-1{
+    height: 400px;
+    /* 为了美观，和上方的导航区nav之间留了一定的间隙 */
+    margin-top: 20px;
+    /* 下边框，三个属性的缩写 */
+    border-bottom: 2px solid #ddd;
+    /* 上边框，三个属性的缩写 */
+    border-top: 2px solid #ddd;
+}
+
+
+#cont-1-1 .cont-1-1-l{
+    /* 布局的关键代码，浮动元素，这里是使图片左对齐 */
+    float: left;
+}
+
+
+#cont-1-1 .cont-1-1-r{
+    /* 为了美观，cont-1-1-r内左边留了一定的间隙，使得文字与图片之间有一定的距离 */
+    padding-left: 620px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+
+/* 第1个页面（首页）的2号内容区cont-1-2--“多面肖战” */
+
+.title{
+    /* 为了美观，h3内上下留了一定的间隙 */
+    padding: 50px 0 25px 0;
+    font-size: 30px;
+    /* 下边框，三个属性的缩写 */
+    border-bottom: 2px solid #ddd;
+}
+
+
+.list{
+    /* 为了美观，ul上方留了一定的间隙 */
+    padding: 30px 0 0 0;
+    /* "弹性布局" */
+    display: flex;
+    /* 如果一条轴线排不下，换行，且第一行在上方 ,这里是使列表项从左到右排列，一行排不下自动换行 */
+    flex-wrap: wrap;
+}
+
+
+#cont-1-2 .list li{
+    /* 设置列表项宽度 */
+    width: 200px;
+    /* 为了美观，列表项之间留了一定的间隙 */
+    margin:0 15px 0 5px;
+}
+
+
+.list .item{
+    /* "弹性布局" */
+    display: flex;
+    /* 主轴为垂直方向，起点在上沿，使得图片与注释垂直排列 */
+    flex-direction: column;
+}
+
+
+.item .img{
+    border: 4px solid white;
+    border-radius: 4px;
+    /* 背景图像居中显示 */
+    background-position: center;
+    /* 保持图像本身的宽高比例，将图像缩放到正好完全覆盖定义背景的区域 */
+    background-size: cover;
+    /* 背景图像仅显示一次，不重复 */
+    background-repeat: no-repeat;
+}
+
+
+#cont-1-2 .list .item .img{ 
+    /* 设置背景区域的宽 */
+    width: 192px; 
+    /* 设置背景区域的高 */
+    height: 260px;
+} 
+
+
+.list li .item .bigtitle{
+    font-size: 20px;
+    font-weight: bold;
+    /* 文本居中显示 */
+    text-align: center;
+}
+
+
+.list .item .smalltitle{
+    color: #525252;
+    font-size: 13px;
+    /* 文本居中显示 */
+    text-align: center;
+    /* 为了美观，与下方的块之间留了一定的间隙 */
+    margin-bottom: 20px;
+}
+
+
+/* 第1个页面（首页）的3号内容区cont-1-3--XiaoZhan's music */
+
+#cont-1-3 .list li{
+    /* 设置列表项宽度 */
+    width: 200px;
+    /* 为了美观，列表项之间留了一定的间隙 */
+    margin:0 15px 0 5px;
+}
+
+
+#cont-1-3 .list .item .img{
+    /* 设置背景区域的宽 */
+    width: 192px;
+    /* 设置背景区域的高 */
+    height: 192px;
+}
+
+
+/* 第1个页面（首页）的4号内容区cont-1-4--访谈 */
+
+#cont-1-4 .list li{
+    /* 设置列表项宽度 */
+    width: 240px;
+    /* 为了美观，列表项之间留了一定的间隙 */
+    margin: 0 10px 0 5px;
+}
+
+
+#cont-1-4 .list .item .img{
+    /* 设置背景区域的宽 */
+    width: 232px;
+    /* 设置背景区域的高 */
+    height: 140px;
+}
+
+
+/* 第1个页面的5号内容区cont-1-5--舞台上闪闪发光的他 */
+
+#cont-1-5 .list li{
+    /* 设置列表项宽度 */
+    width: 320px;
+    /* 为了美观，列表项之间留了一定的间隙 */
+    margin: 0 20px 0 5px;
+}
+
+
+#cont-1-5 .list .item .img{
+    /* 设置背景区域的宽 */
+    width: 312px;
+    /* 设置背景区域的高 */
+    height: 180px;
+}
+
+/* 页脚区footer */
+
+footer{
+    background-color: #0c111b;
+    height: 176px;
+}
+
+
+#logo{
+    /* 布局的关键代码，浮动元素，这里是使图片logo右对齐 */
+    float: right;
+}
+
+
+/* 第2个页面--秘密花园（表格显示布局） */
+
+#tableContainer{
+    /* 表格显示布局的关键代码 */
+    display: table;
+    /* 设置表格中单元格的边框间距 */
+    border-spacing: 13px;
+}
+
+
+#tableRow{
+    /* 表格显示布局的关键代码,<div>是表格中的第一行,也是唯一一行 */
+    display: table-row;
+}
+
+
+#cont-2-1 ,#cont-2-2 ,#cont-2-3{
+    /* 表格显示布局的关键代码 */
+    display: table-cell;
+    background-color: white;
+}
+
+
+#cont-2-1 h1,#cont-2-2 h1,#cont-2-3 h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+
+.underline{
+    /* 为文本增加下划线效果 */
+    text-decoration: underline;
+}
+
+
+/* 第2个页面（秘密花园）的1号内容区（第一列）cont-2-1--他的话语 */
+
+#cont-2-1{
+    /* 设置表格列宽 */
+    width: 20%;
+}
+
+
+#cont-2-1 blockquote p{
+    /* 为了美观，上下段落之间留了一定的间隙 */
+    margin-top: 60px;
+    /* 为了美观，段落与cont-2-1的左边和右边之间留了一定的间隙 */
+    padding: 0 5px;
+}
+
+
+/* 第2个页面（秘密花园）的2号内容区（第二列）cont-2-2--他眼中的世界 */
+
+#cont-2-2{
+    /* 设置表格列宽 */
+    width: 50%;
+}
+
+
+#cont-2-2 .list li{
+    /* 为了美观，列表项之间留了一定的间隙 */
+    margin:0 25px 0 0;
+}
+
+
+#cont-2-2 .list{
+    /* 子元素在主轴上居中显示，这里使列表项（图像）在一行上居中显示 */
+    justify-content: center;
+}
+
+
+#cont-2-2 ul li img{
+    /* 设置图像的高 */
+    height: 200px;
+    /* 设置图像的宽 */
+    width: 200px;
+}
+
+
+#cont-2-2 blockquote{
+    /* 为了美观，blockquote与父元素cont-2-2之间留了一定的间隙 */
+    margin: 0 20px 0 20px;
+}
+
+
+#cont-2-2 blockquote p{
+    /* 为了美观，设置p元素的行高 */
+    line-height: 1.6em; 
+}
+
+
+/* 第2个页面（秘密花园）的3号内容区（第三列）cont-2-3--他笔下的作品 */
+
+#cont-2-3{
+    /* 设置表格列宽 */
+    width: 30%;
+}
+
+
+#cont-2-3 .list{
+    /* 主轴为垂直方向，起点在上沿，使图像垂直排列 */
+    flex-direction: column;
+    /* 使各个图像在每一行居中 */
+    align-items: center;
+}
+
+
+#cont-2-3 img{
+    border: 3px solid #f0f2f4 ;
+}
+
+
+#cont-2-3 ul li p{
+    font-size: 16px;
+    /* 为了美观，p与下方列表项li之间留了一定的间隙 */
+    margin-bottom: 40px;
+}
+
+
+/* 第3个页面--介绍自己（表格的应用） */
+
+table{
+    /* 折叠边框 */
+    border-collapse: collapse;
+    /* 为整个表格增加一个黑色的细边框 */
+    border: thin solid black;
+    /* 为了美观，表格与页眉和页脚之间留了一定的间隙 */
+    margin: 60px 0;
+}
+
+
+td ,th{
+    /* 为数据单元格也增加黑色的细边框 */
+    border: thin solid black;
+    /* 为了美观，为数据单元格增加一些内边距，使数据内容与边框之间有一些空间 */
+    padding: 5px; 
+    /* 为了美观，设置一定的行高 */
+    line-height: 2em;
+}
+
+
+table tr td p{
+    /* 段前空两格 */
+    text-indent: 2em;
+}
+
+
+/* 第4个页面--“交个朋友吧”（表单的应用） */
+
+#meme{
+    /* 绝对定位 */
+    position: absolute;
+    /* 距离页面边界上方的距离 */
+    top: 400px;
+    /* 距离页面边界右边的距离 */
+    right: 250px;
+}
+
+
+form{
+    /* 表格显示布局的关键代码 */
+    display: table;
+    /* 为整个表单增加一个黑色的细边框 */
+    border: thin solid black;
+    /* 为了美观，表单与页眉和页脚之间留了一定的间隙 */
+    margin: 40px 0;
+    /* 为了美观，表单内的内容与表单之间留了一定的间隙 */
+    padding: 10px;
+}
+
+
+div .tableRow{
+    /* 表格显示布局的关键代码 */
+    display: table-row;
+}
+
+
+div .tableRow p{
+    /* 表格显示布局的关键代码 */
+    display: table-cell;
+    /* 设置内边距来增加行之间的间距 */
+    padding: 10px;
+    /* 各行内容与单元格顶部对齐 */
+    vertical-align: top;
+}
+
+
+div .tableRow p:first-child{
+    /* 设置第一列的宽度 */
+    width: 400px;
+    /* 各行的第一个p元素右对齐 */
+    text-align: right;
+}
+
+
+.bigger{
+    /* 为了美观,设置一定的行高 */
+    line-height: 1.7em;
+}
+
+
+form textarea{
+    /* 设置textarea控件的宽度，使它更大一些 */
+    width: 680px;
+    /* 设置textarea控件的高度，使它更大一些 */
+    height: 150px;
+}
+
+.submit{
+    /* 设置submit按钮的宽度 */
+    width: 60px;
+    /* 设置submit按钮的高度 */
+    height: 30px;
+    border-radius: 4px;
+    /* 鼠标指向提交按钮时，变为手型 */
+    cursor: pointer;
+}
+
+#submit input:hover{
+    /* 鼠标悬停在提交按钮上时，“提交”二字会变粗 */
+    font-weight: bold;
+}
+
